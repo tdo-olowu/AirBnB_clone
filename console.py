@@ -4,20 +4,46 @@
 
 import cmd
 
+
 class HBNBCommand(cmd.Cmd):
     """
-    Write a program called console.py that contains the entry point of the command interpreter:
-
-    You must use the module cmd
-    Your class definition must be: class HBNBCommand(cmd.Cmd):
-    Your command interpreter should implement:
-        quit and EOF to exit the program
-        help (this action is provided by default by cmd but you should keep it updated and documented as you work through tasks)
-        a custom prompt: (hbnb)
-        an empty line + ENTER shouldn’t execute anything
     Your code should not be executed when imported
     """
-    pass
+    prompt = "(hbnb) "
+
+    def do_EOF(self, line):
+        """what to do when EOF is met"""
+        return True
+
+    def do_quit(self, line):
+        """Quit command to exit the program"""
+        return True
+
+    def do_create(self, line):
+        """Creates a new instance of BaseModel, saves it (to the JSON file)
+           and prints the id. Ex: $ create BaseModel
+        """
+        pass
+
+    def do_show(self, line):
+        """Prints the string representation of an instance
+        """
+        pass
+
+    def do_destroy(self, line):
+        """Deletes an instance based on the class name and id
+        """
+        pass
+
+    def do_all(self, line):
+        """Prints all string representation of all instances
+        """
+        pass
+
+    def do_update(self, line):
+        """Updates an instance based on the class name and id
+        """
+        pass
 
 
 if __name__ == "__main__":

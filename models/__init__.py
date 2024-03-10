@@ -2,7 +2,7 @@
 """the initialiser for the AirBnB console"""
 
 
-import file_storage.py
+import file_storage
 
-storage = FileStorage()
+storage = file_storage.FileStorage()
 storage.reload()
