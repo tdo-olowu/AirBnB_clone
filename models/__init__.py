@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""the initialiser for the AirBnB console"""
+"""initialiser for this package"""
 
 
-import file_storage
+from .engine.file_storage import FileStorage
 
-storage = file_storage.FileStorage()
+storage = FileStorage()
 storage.reload()
