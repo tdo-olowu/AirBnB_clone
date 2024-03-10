@@ -17,8 +17,6 @@ class BaseModel:
     def __init__(self, *args, **kwargs):
         """the initialiser
         self.id should assign a uuid4 from uuid module
-
-        f it’s a new instance (not from a dictionary representation), add a call to the method new(self) on storage
         """
         if (kwargs):
             fmt = "%Y-%m-%dT%H:%M:%S.%f"
@@ -33,7 +31,6 @@ class BaseModel:
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
 
-
     def __str__(self):
         """print the base in printable format"""
         cls_name = self.__class__.__name__
@@ -41,13 +38,11 @@ class BaseModel:
         my_dct = self.__dict__
         return "[{}] ({}) {}".format(cls_name, my_id, my_dct)
 
-
     def save(self):
         """updates the public instance attribute updated_at
         with the current datetime"""
         storage.save(self)
         self.updated_at = datetime.now()
-
 
     def to_dict(self):
         """returns a dictionary containing all keys/values of __dict__
