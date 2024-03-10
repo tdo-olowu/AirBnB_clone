@@ -6,6 +6,7 @@ import cmd
 from datetime import datetime
 import json
 import uuid
+from __init__ import storage
 
 
 class BaseModel:

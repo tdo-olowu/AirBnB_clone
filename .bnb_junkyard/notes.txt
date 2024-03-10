@@ -1,0 +1,26 @@
+Now I finally understand why this project has been surprisingly difficult/tricky
+
+1. I have no clue how Python files are visible to each other.
+When we type "import json", how does the current file know where json is located?
+If I wanted to import variables from a file in the cwd, how I can let Python know where to look?
+What if I wanted to import from a parent directory or a subdirectory?
+
+2. I have no idea what is being abstracted!
+Object-oriented programming lets you model systems quite easily and intuitively.
+But to get value out of it, you must understand the system being modelled in the first place, otherwise the intuition just won't be present.
+What's AirBnB? I've heard of it but I've never used it nor paid much attention to it. I don't know how it's supposed to work.
+In contrast, if we were modelling something like a VirtualPet or a School, myself and most people probably have some intuition for that so each step would be clear
+Why ALX didn't just ask us to design simple games (e.g. PingPong or BinarySearch game) is beyond me.
+That's a lot more fun than AirBnB and better builds intuition for how OOP works in Python. But, what do I know...
+
+3. My knowledge of JSON serialisation is a bit meagre.
+I haven't had time to really learn what's going on in depth. Much of my effort has been spent merely trying to pass the checks rather than understand the concepts.
+
+
+sigh. These past few months have made me realise that I don't like Python very much.
+C may be tricky and difficult in its own right, but it tends to be unambiguous about its rules.
+In addition, the type system keeps things organised. C code just tends to be more structured from my experience so far, which makes it easier to debug.
+Python code on the other hand tends to feel rather ad-hoc most of the time.
+Either it's unclear what the rules and best practices are, or it's not clear why the rules are the way they are.
+I never thought I'd meet the day when I understand C more than I understand Python.
+Python's OOP definitely isn't the most elegant. I need a break so I can properly understand this stuff.
